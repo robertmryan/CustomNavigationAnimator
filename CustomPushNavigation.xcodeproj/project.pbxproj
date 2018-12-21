@@ -12,6 +12,10 @@
 		8334824621CAEC7100026B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8334824421CAEC7100026B74 /* Main.storyboard */; };
 		8334824821CAEC7200026B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8334824721CAEC7200026B74 /* Assets.xcassets */; };
 		8334824B21CAEC7200026B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8334824921CAEC7200026B74 /* LaunchScreen.storyboard */; };
+		8334825321CAED8200026B74 /* CustomNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334825221CAED8200026B74 /* CustomNavigationAnimator.swift */; };
+		8334825521CAEDCA00026B74 /* CustomNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334825421CAEDCA00026B74 /* CustomNavigationDelegate.swift */; };
+		8334825721CAF50A00026B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334825621CAF50A00026B74 /* SecondViewController.swift */; };
+		8334825921CAF8CB00026B74 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334825821CAF8CB00026B74 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,11 @@
 		8334824721CAEC7200026B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8334824A21CAEC7200026B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8334824C21CAEC7200026B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8334825221CAED8200026B74 /* CustomNavigationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationAnimator.swift; sourceTree = "<group>"; };
+		8334825421CAEDCA00026B74 /* CustomNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationDelegate.swift; sourceTree = "<group>"; };
+		8334825621CAF50A00026B74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8334825821CAF8CB00026B74 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		834F09E821CD4E2700AAEB48 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +47,7 @@
 		8334823421CAEC7100026B74 = {
 			isa = PBXGroup;
 			children = (
+				834F09E821CD4E2700AAEB48 /* README.md */,
 				8334823F21CAEC7100026B74 /* CustomPushNavigation */,
 				8334823E21CAEC7100026B74 /* Products */,
 			);
@@ -56,6 +66,10 @@
 			children = (
 				8334824021CAEC7100026B74 /* AppDelegate.swift */,
 				8334824221CAEC7100026B74 /* ViewController.swift */,
+				8334825621CAF50A00026B74 /* SecondViewController.swift */,
+				8334825821CAF8CB00026B74 /* ThirdViewController.swift */,
+				8334825421CAEDCA00026B74 /* CustomNavigationDelegate.swift */,
+				8334825221CAED8200026B74 /* CustomNavigationAnimator.swift */,
 				8334824421CAEC7100026B74 /* Main.storyboard */,
 				8334824721CAEC7200026B74 /* Assets.xcassets */,
 				8334824921CAEC7200026B74 /* LaunchScreen.storyboard */,
@@ -96,6 +110,11 @@
 				TargetAttributes = {
 					8334823C21CAEC7100026B74 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8334825321CAED8200026B74 /* CustomNavigationAnimator.swift in Sources */,
 				8334824321CAEC7100026B74 /* ViewController.swift in Sources */,
 				8334824121CAEC7100026B74 /* AppDelegate.swift in Sources */,
+				8334825721CAF50A00026B74 /* SecondViewController.swift in Sources */,
+				8334825921CAF8CB00026B74 /* ThirdViewController.swift in Sources */,
+				8334825521CAEDCA00026B74 /* CustomNavigationDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

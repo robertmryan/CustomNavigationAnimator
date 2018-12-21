@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  CustomPushNavigation
 //
 //  Created by Robert Ryan on 12/19/18.
@@ -8,22 +8,23 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class SecondViewController: UIViewController {
     
-    let navigationDelegate = CustomNavigationDelegate()
+    var navigationDelegate: CustomNavigationDelegate { return navigationController!.delegate as! CustomNavigationDelegate }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.delegate = navigationDelegate
         navigationDelegate.addPushInteractionController(to: view)
+        navigationDelegate.addPopInteractionController(to: view)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         navigationDelegate.pushDestination = { [weak self] in
-            self?.storyboard?.instantiateViewController(withIdentifier: "Second")
+            self?.storyboard?.instantiateViewController(withIdentifier: "Third")
         }
     }
+    
 }
